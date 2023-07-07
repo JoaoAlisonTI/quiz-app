@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Footer from './components/Footer'
-import './App.css'
+import Footer from './components/Footer';
+import './App.css';
 
 export default function App() {
   const questions = [
@@ -73,7 +73,35 @@ export default function App() {
     <div className='app'>
       {showScore ? (
         <div className='score-section'>
-          Você Acertou {score} de {questions.length}
+          <h2>Resultados</h2>
+          <h3>Total de perguntas: {questions.length}</h3>
+          <div className="rightAnwsers">
+            <p>
+              <img src="/check-icon.svg" alt="Ícone de marcação correta" />
+              Respostas certas:
+            </p>
+            <span>
+              {score}
+            </span>
+          </div>
+          <div className="wrongAnwsers">
+            <p>
+              <img src="/x-icon.svg" alt="Ícone de marcação incorreta" />
+              Respostas erradas:
+            </p>
+            <span>
+              {questions.length - score}
+            </span>
+          </div>
+          <div className="messages">
+            {score >= 3 ? (
+              <img className="conffetiEffect" src="conffeti.gif" alt="Efeito de confete" />
+            ) : (
+              
+                <h1 className="messageResult">Você acertou poucas perguntas 😭</h1>
+              
+            )}
+          </div>
         </div>
       ) : (
         <>
@@ -82,9 +110,9 @@ export default function App() {
               <span>Pergunta {currentQuestion + 1}</span>/{questions.length}
             </div>
             <div className='question-text'>
-            <h2>
-             {questions[currentQuestion].questionText}
-             </h2>
+              <h2>
+                {questions[currentQuestion].questionText}
+              </h2>
             </div>
           </div>
           <div className='answer-section'>

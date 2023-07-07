@@ -85,4 +85,47 @@
   transform: none;
   box-shadow: none;
 }
-
+.score-section {
+  padding-bottom: 4px;
+  width: 100%;
+}
+.score-section h2 {
+  font-size: 32px;
+}
+.score-section h3 {
+  margin: 10px 0px 10px 0px;
+}
+.score-section img {
+  height: 30px;
+  width: 30px;
+}
+.score-section p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 400;
+}
+.score-section span {
+  font-size: 24px;
+  font-weight: 400;
+}
+.rightAnwsers, .wrongAnwsers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.messages {
+  border-top: 3px solid black;
+  width: 100%;
+}
+.messages img {
+  margin-top: 20px;
+  width: auto;
+  height: 250px;
+}
+.messageResult {
+  margin-top: 40px;
+}
