@@ -24,10 +24,18 @@ Hooks, arte do figma...Falar mais
 
 ### Screenshots
 <p align="center">
-  <iframe width="300" height="560" src="public/videos/tela1.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <img 
+    width="100%"
+    src="public/preview/tela1.gif"
+    alt="tela 1"
+  />
 </p>
 <p align="center">
-  <iframe width="300" height="560" src="public/videos/tela2.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  <img 
+    width="100%"
+    src="public/preview/tela2.gif"
+    alt="tela 2"
+  />
 </p>
 
 ### Links
