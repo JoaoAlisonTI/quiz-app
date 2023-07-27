@@ -19,8 +19,7 @@ Desenvolvido durante o mês de julho de 2023 com foco no aprendizado do React. L
 
 ## Overview
 ### Sobre
-O quiz basicamente tem um array de objetos das questões e respostas que são exibidos de forma dinâmica na tela. Uma das propriedades tem como valor um array de objetos, e um desses objetos tem uma propriedade com valor booleano para identificar qual é a resposta correta, "isCorret: true/false". Avança para a próxima pergunta depois de selecionar/clicar a resposta, isso ativa a função handleAnswerButtonClick que faz a soma da pontuação e faz avançar para a próxima pergunta. No topo temos um contador do total de Perguntas, ao final é mostrado o resultado do usuário, ou seja, quantas respostas certas/erradas ele obteve juntamente com uma mensagem (Dependendo da quantidade de acertos). Essa última funcionalidade não tinha no quiz mas achei interessante adicionar.
-Hooks, arte do figma...Falar mais
+O quiz basicamente tem um array de objetos das questões e respostas que são exibidos de forma dinâmica na tela. Uma das propriedades tem como valor um array de objetos, e um desses objetos tem uma propriedade com valor booleano para identificar qual é a resposta correta, "isCorret: true/false". Avança para a próxima pergunta depois de selecionar/clicar a resposta, isso ativa a função handleAnswerButtonClick que faz a soma da pontuação e faz avançar para a próxima pergunta. No topo temos um contador do total de Perguntas, ao final é mostrado o resultado do usuário, ou seja, quantas respostas certas/erradas ele obteve juntamente com uma mensagem (Dependendo da quantidade de acertos). Essa última funcionalidade não tinha no quiz mas achei interessante adicionar. Foi utilizado o hook useState do React para o armazenamento de estado de algumas funcionalidades, e o design do quiz eu peguei na comunidade do figma, achei interessante e escolhi esse como base.
 
 ### Screenshots
 <p align="center">
@@ -50,17 +49,18 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - Vite
 - React
-- Hooks (useState...)
+- Hooks (useState)
 - Jsx
+- Css
 - Git e Github
 
 ### Continuar o desenvolvimento
-Pretendo adicionar um Rank futuramente com o nome dos usuários
+Pretendo adicionar futuramente um Rank com o nome dos usuários, provavelmente vai ter uma forma de armazenamento (Banco de dados com certeza).
 
 ### Recursos úteis
-- [Guia completo de flexbox](https://origamid.com/projetos/flexbox-guia-completo/) - Aprenda a utilizar o flexbox para a criação de layouts responsivos com css.
-- [Conceitos básicos de flexbox](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) - Este artigo fornece um resumo das principais funcionalidades do flexbox.
-- [Learn CRUD Operations in JavaScript by Building TODO APP](https://www.freecodecamp.org/news/learn-crud-operations-in-javascript-by-building-todo-app/) - CRUD é um tipo de mecanismo que permite criar dados, ler dados, editá-los e excluí-los. Neste caso vai ser abordado sobre um app Todo, mas como também utiliza as 4 operações CRUD ele também se torna importante para entender os seus princípios.
+- [How to Build a Quiz App Using React –with Tips and Starter Code](https://www.freecodecamp.org/news/how-to-build-a-quiz-app-using-react/) - In this beginner React tutorial we're going to build a quiz app. We'll work with complex state objects, how to handle different state hooks, and render things based on state.
+- [Conceitos básicos de flexbox CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox) - Este artigo fornece um resumo das principais funcionalidades do flexbox.
+- [Neubrutalist Quiz app - By Loidgi](https://www.figma.com/community/file/1145433435196546360/Neubrutalist-Quiz-app---By-Loidgi) - A short and simple example of a Neubrutalist Quiz app!
 
 </br>
 
